@@ -1,14 +1,22 @@
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
-  position: fixed;
-  z-index: 1;
   width: 100%;
-  top: 0%;
-  border-bottom: solid 1px var(rgb(86, 21, 116));
+  top: 0;
+  border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
+  background-color: black;
+}
+
+.navbarLinks {
+  width: 50%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: whitesmoke;
 }
 
 .bg-dark {
@@ -35,4 +43,9 @@
 
 .main-text {
   font-family: "Righteous", cursive;
+}
+
+.navbar ul {
+  padding: 10;
+  width: 50;
 }
