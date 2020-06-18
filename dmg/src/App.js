@@ -1,9 +1,16 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { Component } from "react";
 import "./App.css";
+import Home from "./components/Home";
 
-function App() {
-  return <div> Hello Daniel </div>;
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <p>This seems to be working?</p>
+        <Home />
+      </div>
+    );
+  }
 }
 
 export default App;
