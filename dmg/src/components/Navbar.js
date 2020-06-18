@@ -2,7 +2,7 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar sticky">
       <nav className="navbarLinks main-text">
         <ul>Home</ul>
         <ul>About</ul>
