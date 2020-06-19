@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <div className="about">
       <div className="card">
-        <div className="photo">photo</div>
+        <div className="photo"></div>
         <div className="bio main-text">
           Here is some placeholder text about me. The fact is that I'm great and
           you should really give me a job and all. That's what I think but
