@@ -9,8 +9,8 @@ class Projects extends Component {
   };
 
   componentDidMount() {
-    const clientId = "e49b037dba7346b4c870";
-    const secret = "70a4b6b57f85ce2d139e803e83e45472f584bd2a";
+    const clientId = process.env.GITHUB_CLIENT_ID;
+    const secret = process.env.GITHUB_SECRET;
     console.log(secret);
     const options = {
       uri: `https://api.github.com/users/denriquem/repos?per_page=5&sort=created: asc&client_id${clientId}&client_secret${secret}`,
