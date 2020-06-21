@@ -23,6 +23,7 @@
   justify-content: space-between;
   color: whitesmoke;
   z-index: 1000;
+  cursor: pointer;
 }
 
 .bg-dark {
