@@ -11,7 +11,6 @@ class Projects extends Component {
   componentDidMount() {
     const clientId = process.env.GITHUB_CLIENT_ID;
     const secret = process.env.GITHUB_SECRET;
-    console.log(secret);
     const options = {
       uri: `https://api.github.com/users/denriquem/repos?per_page=4&sort=created: asc&client_id${clientId}&client_secret${secret}`,
       method: "GET",
@@ -51,7 +50,7 @@ class Projects extends Component {
         <div className="projectHeader text-main light-text">
           Projects
           <link
-            href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap"
             rel="stylesheet"
           ></link>
         </div>
