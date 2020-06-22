@@ -23,6 +23,7 @@ class Projects extends Component {
       const fourProjects = JSON.parse(body);
 
       const starred = fourProjects.filter((x) => x.stargazers_count > 0);
+      const edited = fourProjects.splice(2, 1);
       this.setState({ projects: fourProjects });
       console.log(fourProjects);
     });
@@ -45,7 +46,18 @@ class Projects extends Component {
       );
     });
 
-    return <div className="projects">{projects}/</div>;
+    return (
+      <div className="projects">
+        <div className="projectHeader text-main light-text">
+          Projects
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&display=swap"
+            rel="stylesheet"
+          ></link>
+        </div>
+        <div className="container1">{projects}</div>
+      </div>
+    );
   }
 }
 
