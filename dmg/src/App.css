@@ -66,6 +66,16 @@
   background-color: rgb(245, 92, 31);
 }
 
+.aboutHeading {
+  font-family: "Monoton", cursive;
+  top: 10%;
+  color: black;
+  font-weight: 400;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -76,10 +86,10 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  top: 15%;
+  top: 7%;
   left: 10%;
   width: 80%;
-  height: 80%;
+  height: 60%;
   background-color: rgb(245, 92, 31);
   opacity: 1;
 }
@@ -135,6 +145,7 @@
   box-shadow: 0 2px 3px #ccc;
   margin: 10px;
   box-sizing: border-box;
+  border-style: ridge;
   cursor: pointer;
 }
 
@@ -164,4 +175,6 @@
   width: 100%;
   text-align: center;
   font-size: 40px;
+  text-decoration: underline white;
+  /* transform: rotate(-20deg); */
 }

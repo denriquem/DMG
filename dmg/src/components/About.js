@@ -3,6 +3,13 @@ import React from "react";
 export const About = () => {
   return (
     <div className="about">
+      <div className="aboutHeading">
+        About Me
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+        </style>
+      </div>
       <div className="card">
         <div className="photo"></div>
         <div className="bio main-text">
