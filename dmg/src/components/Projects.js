@@ -13,28 +13,36 @@ class Projects extends Component {
     const secret = process.env.GITHUB_SECRET;
     console.log(secret);
     const options = {
-      uri: `https://api.github.com/users/denriquem/repos?per_page=5&sort=created: asc&client_id${clientId}&client_secret${secret}`,
+      uri: `https://api.github.com/users/denriquem/repos?per_page=4&sort=created: asc&client_id${clientId}&client_secret${secret}`,
       method: "GET",
-      headers: { "user-agent": "node.js" },
+      headers: { "user-agent": "react.js" },
     };
 
     request(options, (error, response, body) => {
       if (error) console.error(error);
+      const fourProjects = JSON.parse(body);
 
-      const res1 = response.toJSON(JSON.parse(body));
-      console.log(res1.body);
+      const starred = fourProjects.filter((x) => x.stargazers_count > 0);
+      this.setState({ projects: fourProjects });
+      console.log(fourProjects);
     });
 
     axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
       const projectsShort = res.data.slice(0, 4);
-      this.setState({ projects: projectsShort });
-      // console.log(projectsShort);
+      // this.setState({ projects: projectsShort });
+      console.log(projectsShort);
     });
   }
 
   render() {
     const projects = this.state.projects.map((project) => {
-      return <Project key={project.id} title={project.title} />;
+      return (
+        <Project
+          key={project.id}
+          title={project.name}
+          description={project.description}
+        />
+      );
     });
 
     return <div className="projects">{projects}/</div>;
