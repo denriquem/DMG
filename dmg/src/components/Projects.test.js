@@ -8,7 +8,7 @@ beforeEach(() => {
 });
 
 describe("Projects", () => {
-  it("succesfully renders teh navbar", () => {
+  it("succesfully renders the navbar", () => {
     expect(wrapper).toHaveLength(1);
   });
 });

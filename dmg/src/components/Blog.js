@@ -6,8 +6,12 @@ class Blog extends Component {
   };
 
   btnClick() {
-    window.open("https://as.com/");
+    window.open("https://medium.com/@demartinezgatell");
   }
+
+  btnClick2 = () => {
+    window.open("https://github.com/denriquem/CV");
+  };
 
   render() {
     return (
@@ -15,10 +19,17 @@ class Blog extends Component {
         <div className="textBox main-text">
           If you're interested in reading my blog about changing career into
           software development and my time at Makers Academy, follow this link
-          here!
+          here! ===>
+        </div>
+        <div className="textBox main-text">
+          If you want a more detailed account of my work so far, follow this
+          liink to my Github CV
         </div>
         <button className="button1" onClick={this.btnClick.bind(this)}>
-          Blog Blog
+          Blog
+        </button>
+        <button className="button2" onClick={this.btnClick2}>
+          GitHub CV
         </button>
       </div>
     );

@@ -81,8 +81,6 @@
   font-size: 40px;
   position: relative;
   text-align: center;
-  text-decoration: underline yellow;
-  text-decoration-style: solid;
 }
 
 .sticky {
@@ -135,7 +133,7 @@
   top: 25%;
   position: relative;
   left: 15%;
-  height: 50%;
+  height: 30%;
   width: 40%;
   z-index: 1;
 }
@@ -198,12 +196,12 @@
   width: 100%;
   text-align: center;
   font-size: 40px;
-
-  /* transform: rotate(-20deg); */
 }
 
 .button1 {
-  margin-top: 1%;
+  position: relative;
+  bottom: 95px;
+  margin-bottom: 10%;
   cursor: pointer;
   margin-left: 60%;
   background-color: black;
@@ -215,4 +213,23 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 20px;
+  font-family: "Righteous", cursive;
+}
+
+.button2 {
+  position: relative;
+  bottom: 190px;
+
+  cursor: pointer;
+  margin-left: 60%;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  font-family: "Righteous", cursive;
 }
