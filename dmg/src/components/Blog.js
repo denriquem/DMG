@@ -5,9 +5,9 @@ class Blog extends Component {
     hidden: false,
   };
 
-  btnClick() {
+  btnClick = () => {
     window.open("https://medium.com/@demartinezgatell");
-  }
+  };
 
   btnClick2 = () => {
     window.open("https://github.com/denriquem/CV");
@@ -25,7 +25,7 @@ class Blog extends Component {
           If you want a more detailed account of my work so far, follow this
           liink to my Github CV
         </div>
-        <button className="button1" onClick={this.btnClick.bind(this)}>
+        <button className="button1" onClick={this.btnClick}>
           Blog
         </button>
         <button className="button2" onClick={this.btnClick2}>
