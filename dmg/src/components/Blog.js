@@ -16,21 +16,22 @@ class Blog extends Component {
   render() {
     return (
       <div className="blogComponent main-text">
-        <div className="textBox main-text">
-          If you're interested in reading my blog about changing career into
-          software development and my time at Makers Academy, follow this link
-          here! ===>
+        <div className="card2">
+          <div className="textBox2 main-text">
+            If you're interested in reading my blog about changing career into
+            software development and my time at Makers Academy, follow me here.
+            <button className="button1" onClick={this.btnClick}>
+              Blog
+            </button>
+          </div>
+          <div className="textBox2 main-text">
+            If you want a more detailed account of my work so far, follow this
+            liink to my Github CV
+            <button className="button2" onClick={this.btnClick2}>
+              GitHub CV
+            </button>
+          </div>
         </div>
-        <div className="textBox main-text">
-          If you want a more detailed account of my work so far, follow this
-          liink to my Github CV
-        </div>
-        <button className="button1" onClick={this.btnClick}>
-          Blog
-        </button>
-        <button className="button2" onClick={this.btnClick2}>
-          GitHub CV
-        </button>
       </div>
     );
   }

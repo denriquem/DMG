@@ -12,7 +12,7 @@
   height: 7%;
 }
 
-.navbar Link:hover {
+.navbar a:hover {
   color: rgb(245, 92, 31);
 }
 
@@ -101,6 +101,33 @@
   height: 60%;
   background-color: rgb(245, 92, 31);
   opacity: 1;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 7%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  opacity: 1;
+}
+
+.textBox2 {
+  left: 25%;
+  top: 12%;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  height: 220px;
+  width: 250px;
+  padding: 20px;
+  padding-top: 20px;
+  border: 1px solid black;
+  border-style: ridge;
+  margin: 10px;
 }
 
 .photo {
@@ -202,10 +229,9 @@
 
 .button1 {
   position: relative;
-  bottom: 95px;
-  margin-bottom: 10%;
+
   cursor: pointer;
-  margin-left: 60%;
+  margin-top: 20px;
   background-color: black;
   border: none;
   color: white;
@@ -220,10 +246,9 @@
 
 .button2 {
   position: relative;
-  bottom: 190px;
-
+  margin-top: 10px;
   cursor: pointer;
-  margin-left: 60%;
+
   background-color: black;
   border: none;
   color: white;
@@ -237,7 +262,20 @@
 }
 
 .contact {
-  background-color: black;
+  background-color: rgb(245, 92, 31);
+
   width: 100%;
   height: 200px;
+}
+
+.contactHeader {
+  padding-top: 2%;
+  top: 10%;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Righteous", cursive;
 }
