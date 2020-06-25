@@ -6,6 +6,7 @@ import request from "request";
 class Projects extends Component {
   state = {
     projects: [],
+    selectedPostId: null,
   };
 
   componentDidMount() {
@@ -21,8 +22,8 @@ class Projects extends Component {
       if (error) console.error(error);
       const fourProjects = JSON.parse(body);
 
-      const starred = fourProjects.filter((x) => x.stargazers_count > 0);
-      const edited = fourProjects.splice(2, 1);
+      // const starred = fourProjects.filter((x) => x.stargazers_count > 0);
+      fourProjects.splice(2, 1);
       this.setState({ projects: fourProjects });
       console.log(fourProjects);
     });
@@ -34,6 +35,18 @@ class Projects extends Component {
     });
   }
 
+  postSelectHandler = async (id) => {
+    console.log("are you there?");
+    await this.setState({ selectedPostId: id });
+    const rightId = this.state.projects.filter(
+      (x) => x.id === this.state.selectedPostId
+    );
+    const correctObject = rightId.pop();
+    const betterUrl = correctObject.url.replace("api.", "");
+    const bestUrl = betterUrl.replace("/repos", "");
+    window.open(bestUrl);
+  };
+
   render() {
     const projects = this.state.projects.map((project) => {
       return (
@@ -41,6 +54,7 @@ class Projects extends Component {
           key={project.id}
           title={project.name}
           description={project.description}
+          clicked={() => this.postSelectHandler(project.id)}
         />
       );
     });

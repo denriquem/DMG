@@ -1,7 +1,7 @@
 import React from "react";
 
 const Project = (props) => (
-  <article className="project main-text">
+  <article className="project main-text" onClick={props.clicked}>
     <h1 className="light-text">{props.title}</h1>
     <div className="info">
       <div className="description light-text">{props.description}</div>
