@@ -21,17 +21,9 @@ class Projects extends Component {
     request(options, (error, response, body) => {
       if (error) console.error(error);
       const fourProjects = JSON.parse(body);
-
-      // const starred = fourProjects.filter((x) => x.stargazers_count > 0);
       fourProjects.splice(2, 1);
       this.setState({ projects: fourProjects });
       console.log(fourProjects);
-    });
-
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
-      const projectsShort = res.data.slice(0, 4);
-      // this.setState({ projects: projectsShort });
-      console.log(projectsShort);
     });
   }
 
