@@ -13,10 +13,11 @@ export const About = () => {
       <div className="card">
         <div className="photo"></div>
         <div className="bio main-text">
-          Here is some placeholder text about me. The fact is that I'm great and
-          you should really give me a job and all. That's what I think but
-          sometimes opinion is just not enough. The thing is if I told you even
-          more about myself, that would be better.
+          Hi there, my name is Daniel Martinez-Gatell. I'm a full stack software
+          developer with a bacground in cogntiive neuroscience. I specialise in
+          React and full stack MERN projects. I also have experience using Ruby,
+          Rails and Sinatra. Below you can find more information on three of my
+          most recent projects.
         </div>
       </div>
     </div>
