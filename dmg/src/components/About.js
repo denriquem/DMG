@@ -13,7 +13,7 @@ export const About = () => {
       <div className="card">
         <div className="photo"></div>
         <div className="bio main-text">
-          Hi there, my name is Daniel Martinez-Gatell. I'm a full stack software
+          Hi, my name is Daniel Martinez-Gatell. I'm a full stack software
           developer with a background in cogntiive neuroscience. I specialise in
           React and full stack MERN projects. I also have experience using Ruby,
           Rails and Sinatra. Below you can find more information on three of my
